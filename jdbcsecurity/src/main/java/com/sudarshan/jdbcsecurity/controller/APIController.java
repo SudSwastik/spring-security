@@ -1,0 +1,18 @@
+package com.sudarshan.jdbcsecurity.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class APIController {
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello world";
+    }
+
+    @GetMapping("/secure")
+    public String secure() {
+        return "Secure Hello world";
+    }
+}
